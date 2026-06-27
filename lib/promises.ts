@@ -15,6 +15,14 @@ const YSRCP_LABEL = {
   te: "వైఎస్‌ఆర్‌సిపి 2019 మేనిఫెస్టో 'నవరత్నాలు' (అధికారిక PDF)",
 };
 
+// TDP–JSP–BJP 2024 manifesto coverage (verified to list these promises).
+const NDA_MANIFESTO =
+  "https://theprint.in/india/andhra-pradesh-nda-partners-tdp-bjp-janasena-release-welfare-heavy-manifesto-2/2064385/";
+const NDA_LABEL = {
+  en: "TDP–JSP–BJP manifesto 2024 (The Print)",
+  te: "టీడీపీ–జేఎస్‌పీ–బీజేపీ మేనిఫెస్టో 2024 (ద ప్రింట్)",
+};
+
 export const promises: Promise[] = [
   // ---------------- NDA government (2024–29) — "Super Six" ----------------
   {
@@ -438,6 +446,333 @@ export const promises: Promise[] = [
           te: "~30 లక్షల స్థలాలు పంపిణీ; ఇళ్లు మంజూరు, పూర్తి సంఖ్య మూలాన్ని బట్టి మారుతుంది (ద న్యూస్ మినిట్)",
         },
         url: "https://www.thenewsminute.com/article/andhra-cm-launches-low-cost-housing-scheme-poor-pedalandariki-illu-140320",
+      },
+    ],
+  },
+
+  // ---------------- NDA government (2024–29) — additional manifesto promises ----------------
+  {
+    id: "nda-amaravati-capital",
+    termId: "tdp-2024",
+    category: "infrastructure",
+    title: {
+      en: "Develop Amaravati as the state capital",
+      te: "అమరావతిని రాష్ట్ర రాజధానిగా అభివృద్ధి",
+    },
+    fullText: {
+      en: "Amaravati will be developed as the capital city and measures taken for its reconstruction.",
+      te: "అమరావతిని రాజధాని నగరంగా అభివృద్ధి చేసి, దాని పునర్నిర్మాణానికి చర్యలు తీసుకుంటారు.",
+    },
+    status: "in_progress",
+    statusVerified: true,
+    source: { label: NDA_LABEL, url: NDA_MANIFESTO },
+    evidence: [
+      {
+        label: {
+          en: "Cabinet approved major new Amaravati construction works (Deccan Chronicle, Dec 2025)",
+          te: "అమరావతి కొత్త నిర్మాణ పనులకు కేబినెట్ ఆమోదం (డెక్కన్ క్రానికల్, డిసె 2025)",
+        },
+        url: "https://www.deccanchronicle.com/southern-states/andhra-pradesh/ap-cabinet-approves-new-construction-works-in-amaravati-1923275",
+      },
+    ],
+    cityStatus: [
+      {
+        city: "vijayawada",
+        status: "in_progress",
+        note: {
+          en: "Amaravati capital region adjoins Vijayawada; construction resumed.",
+          te: "అమరావతి రాజధాని ప్రాంతం విజయవాడకు ఆనుకుని ఉంది; నిర్మాణం పునఃప్రారంభం.",
+        },
+      },
+    ],
+  },
+  {
+    id: "nda-anna-canteens",
+    termId: "tdp-2024",
+    category: "welfare",
+    title: {
+      en: "Revive Anna Canteens — meals at ₹5",
+      te: "అన్న క్యాంటీన్లు పునరుద్ధరణ — ₹5కు భోజనం",
+    },
+    fullText: {
+      en: "Reopen Anna Canteens offering meals through the day at a highly subsidised ₹5.",
+      te: "రోజంతా ₹5 రాయితీ ధరకు భోజనం అందించే అన్న క్యాంటీన్లను తిరిగి తెరవడం.",
+    },
+    status: "completed",
+    statusVerified: true,
+    completionPct: 100,
+    source: {
+      label: {
+        en: "TDP 2024 poll promise (The News Minute)",
+        te: "టీడీపీ 2024 ఎన్నికల హామీ (ద న్యూస్ మినిట్)",
+      },
+      url: "https://www.thenewsminute.com/andhra-pradesh/discontinued-by-ysrcp-tdp-relaunches-anna-canteens-in-andhra",
+    },
+    evidence: [
+      {
+        label: {
+          en: "TDP govt relaunched Anna Canteens at ₹5/meal (The News Minute, 2024)",
+          te: "టీడీపీ ప్రభుత్వం ₹5/భోజనానికి అన్న క్యాంటీన్లు పునఃప్రారంభం (ద న్యూస్ మినిట్, 2024)",
+        },
+        url: "https://www.thenewsminute.com/andhra-pradesh/discontinued-by-ysrcp-tdp-relaunches-anna-canteens-in-andhra",
+      },
+    ],
+  },
+  {
+    id: "nda-mega-dsc",
+    termId: "tdp-2024",
+    category: "jobs",
+    title: {
+      en: "Mega DSC — large-scale teacher recruitment",
+      te: "మెగా డీఎస్‌సీ — భారీ స్థాయిలో ఉపాధ్యాయ నియామకాలు",
+    },
+    fullText: {
+      en: "A mega teacher recruitment drive and an annual job calendar to fill vacancies.",
+      te: "ఖాళీల భర్తీకి మెగా ఉపాధ్యాయ నియామక డ్రైవ్, వార్షిక ఉద్యోగ క్యాలెండర్.",
+    },
+    status: "in_progress",
+    statusVerified: true,
+    source: { label: NDA_LABEL, url: NDA_MANIFESTO },
+    evidence: [
+      {
+        label: {
+          en: "Mega DSC 2025 announced to recruit 16,000+ teachers (The South First)",
+          te: "16,000+ ఉపాధ్యాయుల నియామకానికి మెగా డీఎస్‌సీ 2025 ప్రకటన (ద సౌత్ ఫస్ట్)",
+        },
+        url: "https://thesouthfirst.com/andhrapradesh/andhra-pradesh-government-announces-mega-dsc-2025-to-recruit-over-16000-teachers/",
+      },
+    ],
+  },
+  {
+    id: "nda-scrap-land-titling",
+    termId: "tdp-2024",
+    category: "infrastructure",
+    title: {
+      en: "Repeal the YSRCP-era Land Titling Act",
+      te: "వైఎస్‌ఆర్‌సిపి కాలపు ల్యాండ్ టైట్లింగ్ చట్టం రద్దు",
+    },
+    fullText: {
+      en: "The Land Titling Act introduced by the YSRCP government will be rescinded.",
+      te: "వైఎస్‌ఆర్‌సిపి ప్రభుత్వం తెచ్చిన ల్యాండ్ టైట్లింగ్ చట్టాన్ని రద్దు చేస్తారు.",
+    },
+    status: "completed",
+    statusVerified: true,
+    completionPct: 100,
+    source: { label: NDA_LABEL, url: NDA_MANIFESTO },
+    evidence: [
+      {
+        label: {
+          en: "AP Land Titling Repeal Act, 2024 (Act 11 of 2024) — official text (PRS)",
+          te: "ఏపీ ల్యాండ్ టైట్లింగ్ రద్దు చట్టం, 2024 (చట్టం 11/2024) — అధికారిక పాఠం (PRS)",
+        },
+        url: "https://prsindia.org/files/bills_acts/acts_states/andhra-pradesh/2024/Act11of2024AP.pdf",
+      },
+    ],
+  },
+  {
+    id: "nda-polavaram",
+    termId: "tdp-2024",
+    category: "infrastructure",
+    title: {
+      en: "Complete the Polavaram irrigation project",
+      te: "పోలవరం సాగునీటి ప్రాజెక్టు పూర్తి",
+    },
+    fullText: {
+      en: "Quick completion of the Polavaram irrigation project.",
+      te: "పోలవరం సాగునీటి ప్రాజెక్టును త్వరితగతిన పూర్తి చేయడం.",
+    },
+    status: "in_progress",
+    statusVerified: true,
+    source: { label: NDA_LABEL, url: NDA_MANIFESTO },
+    evidence: [
+      {
+        label: {
+          en: "Under active construction; completion targeted October 2026 (The Chenab Times)",
+          te: "క్రియాశీల నిర్మాణంలో; అక్టోబర్ 2026 పూర్తి లక్ష్యం (ద చీనాబ్ టైమ్స్)",
+        },
+        url: "https://thechenabtimes.com/2026/05/28/international-experts-affirm-polavaram-projects-pace-and-quality/",
+      },
+    ],
+  },
+  {
+    id: "nda-pension-hike-4000",
+    termId: "tdp-2024",
+    category: "welfare",
+    title: {
+      en: "Raise social security pension to ₹4,000/month",
+      te: "సామాజిక భద్రత పింఛను నెలకు ₹4,000కు పెంపు",
+    },
+    fullText: {
+      en: "Welfare pensions will be hiked from ₹3,000 to ₹4,000 per month.",
+      te: "సంక్షేమ పింఛన్లను నెలకు ₹3,000 నుంచి ₹4,000కు పెంచుతారు.",
+    },
+    status: "completed",
+    statusVerified: true,
+    completionPct: 100,
+    source: { label: NDA_LABEL, url: NDA_MANIFESTO },
+    evidence: [
+      {
+        label: {
+          en: "GO MS 43 (13.06.2024): pension raised to ₹4,000/month — official AP order",
+          te: "జీవో ఎంఎస్ 43 (13.06.2024): పింఛను నెలకు ₹4,000కు పెంపు — అధికారిక ఏపీ ఉత్తర్వు",
+        },
+        url: "https://sspensions.ap.gov.in/SSP/Documents/GO%20MS%2043%2013.06.2024.pdf",
+      },
+    ],
+  },
+
+  // ---------------- YSRCP government (2019–24) — additional Navaratnalu promises ----------------
+  {
+    id: "ysrcp-vidya-deevena",
+    termId: "ysrcp-2019",
+    category: "education",
+    title: {
+      en: "Jagananna Vidya Deevena — full college fee reimbursement",
+      te: "జగనన్న విద్యా దీవెన — పూర్తి కళాశాల ఫీజు రీయింబర్స్‌మెంట్",
+    },
+    fullText: {
+      en: "Full reimbursement of college tuition fees, paid quarterly to mothers.",
+      te: "కళాశాల ట్యూషన్ ఫీజుల పూర్తి రీయింబర్స్‌మెంట్, తల్లులకు త్రైమాసికంగా చెల్లింపు.",
+    },
+    status: "completed",
+    statusVerified: true,
+    completionPct: 100,
+    source: { label: YSRCP_LABEL, url: YSRCP_MANIFESTO },
+    evidence: [
+      {
+        label: {
+          en: "Fee reimbursement disbursed quarterly to mothers through the term (Deccan Chronicle)",
+          te: "కాలమంతా తల్లులకు త్రైమాసికంగా ఫీజు రీయింబర్స్‌మెంట్ (డెక్కన్ క్రానికల్)",
+        },
+        url: "https://www.deccanchronicle.com/nation/current-affairs/180323/cm-to-disburse-rs-69868-crore-under-jagananna-vidya-deevena-today.html",
+      },
+    ],
+  },
+  {
+    id: "ysrcp-cheyutha",
+    termId: "ysrcp-2019",
+    category: "women",
+    title: {
+      en: "YSR Cheyutha — annual aid to women 45–60",
+      te: "వైఎస్‌ఆర్ చేయూత — 45–60 ఏళ్ల మహిళలకు వార్షిక సహాయం",
+    },
+    fullText: {
+      en: "Financial assistance to SC/ST/BC/Minority women aged 45–60 (₹75,000 over four years).",
+      te: "45–60 ఏళ్ల ఎస్సీ/ఎస్టీ/బీసీ/మైనారిటీ మహిళలకు ఆర్థిక సహాయం (నాలుగేళ్లలో ₹75,000).",
+    },
+    status: "completed",
+    statusVerified: true,
+    completionPct: 100,
+    source: { label: YSRCP_LABEL, url: YSRCP_MANIFESTO },
+    evidence: [
+      {
+        label: {
+          en: "Final phase released; ₹75,000 over four years per woman (Deccan Chronicle)",
+          te: "చివరి దశ విడుదల; ఒక్కో మహిళకు నాలుగేళ్లలో ₹75,000 (డెక్కన్ క్రానికల్)",
+        },
+        url: "https://www.deccanchronicle.com/nation/current-affairs/cm-jagan-releases-rs-5060-crore-under-ysr-cheyutha-884529",
+      },
+    ],
+  },
+  {
+    id: "ysrcp-nadu-nedu",
+    termId: "ysrcp-2019",
+    category: "education",
+    title: {
+      en: "Mana Badi Nadu-Nedu — revamp government schools",
+      te: "మన బడి నాడు-నేడు — ప్రభుత్వ పాఠశాలల పునరుద్ధరణ",
+    },
+    fullText: {
+      en: "Upgrade government school infrastructure and introduce English medium under Nadu-Nedu.",
+      te: "నాడు-నేడు కింద ప్రభుత్వ పాఠశాలల మౌలిక సదుపాయాల అభివృద్ధి, ఆంగ్ల మాధ్యమం ప్రవేశం.",
+    },
+    status: "in_progress",
+    statusVerified: true,
+    source: { label: YSRCP_LABEL, url: YSRCP_MANIFESTO },
+    evidence: [
+      {
+        label: {
+          en: "Phase 1 done (~15,715 schools); Phase 2 stalled on funds (The South First)",
+          te: "దశ 1 పూర్తి (~15,715 పాఠశాలలు); నిధుల లేమితో దశ 2 నిలిచిపోయింది (ద సౌత్ ఫస్ట్)",
+        },
+        url: "https://thesouthfirst.com/pti/phase-2-of-andhra-pradesh-chief-ministers-ambitious-mana-badi-nadu-nedu-comes-to-halt/",
+      },
+    ],
+  },
+  {
+    id: "ysrcp-sunna-vaddi",
+    termId: "ysrcp-2019",
+    category: "women",
+    title: {
+      en: "YSR Sunna Vaddi — zero-interest loans to women SHGs",
+      te: "వైఎస్‌ఆర్ సున్నా వడ్డీ — మహిళా సంఘాలకు వడ్డీ లేని రుణాలు",
+    },
+    fullText: {
+      en: "Reimburse interest so women's self-help group loans are effectively zero-interest.",
+      te: "మహిళా స్వయం సహాయక సంఘాల రుణాలు వడ్డీ లేకుండా ఉండేలా వడ్డీని రీయింబర్స్ చేయడం.",
+    },
+    status: "completed",
+    statusVerified: true,
+    completionPct: 100,
+    source: { label: YSRCP_LABEL, url: YSRCP_MANIFESTO },
+    evidence: [
+      {
+        label: {
+          en: "₹13,054 cr interest reimbursed to 1 cr+ SHG women (National Herald)",
+          te: "1 కోటి+ సంఘ మహిళలకు ₹13,054 కోట్ల వడ్డీ రీయింబర్స్ (నేషనల్ హెరాల్డ్)",
+        },
+        url: "https://www.nationalheraldindia.com/national/andhra-pradesh-cm-disburses-rs-13054-crore-interest-reimbursement-under-ysr-sunna-vaddi-scheme",
+      },
+    ],
+  },
+  {
+    id: "ysrcp-disha-act",
+    termId: "ysrcp-2019",
+    category: "women",
+    title: {
+      en: "AP Disha Act — fast-track law for crimes against women",
+      te: "ఏపీ దిశ చట్టం — మహిళలపై నేరాలకు ఫాస్ట్-ట్రాక్ చట్టం",
+    },
+    fullText: {
+      en: "Enact the Disha Act for fast-track investigation and trial of crimes against women.",
+      te: "మహిళలపై నేరాల ఫాస్ట్-ట్రాక్ దర్యాప్తు, విచారణ కోసం దిశ చట్టాన్ని తీసుకురావడం.",
+    },
+    status: "in_progress",
+    statusVerified: true,
+    source: { label: YSRCP_LABEL, url: YSRCP_MANIFESTO },
+    evidence: [
+      {
+        label: {
+          en: "Assembly passed the Bill (2019); Presidential assent never granted, not operational (Republic)",
+          te: "అసెంబ్లీ బిల్లు ఆమోదం (2019); రాష్ట్రపతి ఆమోదం రాలేదు, అమలులోకి రాలేదు (రిపబ్లిక్)",
+        },
+        url: "https://www.republicworld.com/india-news/general-news/andhra-pradesh-govt-yet-to-provide-clarifications-mha-clears-air-on-pending-disha-bill.html",
+      },
+    ],
+  },
+  {
+    id: "ysrcp-matsyakara-bharosa",
+    termId: "ysrcp-2019",
+    category: "agriculture",
+    title: {
+      en: "YSR Matsyakara Bharosa — support to fishermen",
+      te: "వైఎస్‌ఆర్ మత్స్యకార భరోసా — మత్స్యకారులకు సహాయం",
+    },
+    fullText: {
+      en: "Financial assistance to fishermen families during the annual fishing-ban period.",
+      te: "వార్షిక చేపల వేట నిషేధ కాలంలో మత్స్యకార కుటుంబాలకు ఆర్థిక సహాయం.",
+    },
+    status: "completed",
+    statusVerified: true,
+    completionPct: 100,
+    source: { label: YSRCP_LABEL, url: YSRCP_MANIFESTO },
+    evidence: [
+      {
+        label: {
+          en: "₹123.52 cr to 1,23,519 fishermen; final disbursal May 2024 (ICSF)",
+          te: "1,23,519 మత్స్యకారులకు ₹123.52 కోట్లు; చివరి చెల్లింపు మే 2024 (ICSF)",
+        },
+        url: "https://icsf.net/newss/andhra-pradesh-3-52-crore-as-assistance-for-the-fishing-ban-period-to-fishermen-families/",
       },
     ],
   },
